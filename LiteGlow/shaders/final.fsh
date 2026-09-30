@@ -2,7 +2,9 @@
 #include "/lib/settings.glsl"
 
 // HDR scene buffer: half the bandwidth of RGBA16F
+/*
 const int colortex0Format = R11F_G11F_B10F;
+*/
 
 uniform sampler2D colortex0;
 
