@@ -1,0 +1,13 @@
+screen.VISUAL=Картинка
+screen.WORLD=Мир
+option.EXPOSURE=Экспозиция
+option.SATURATION=Насыщенность
+option.CONTRAST=Контраст
+option.VIGNETTE=Виньетка
+option.WARMTH=Тёплота цвета
+option.HAZE=Дымка вдали
+option.WAVING=Колышущаяся растительность
+option.WATER_FX=Эффекты воды
+profile.Lite=Лайт
+profile.Default=Стандарт
+profile.Cinematic=Кино

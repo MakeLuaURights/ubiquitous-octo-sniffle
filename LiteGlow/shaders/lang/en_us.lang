@@ -1,0 +1,13 @@
+screen.VISUAL=Visual
+screen.WORLD=World
+option.EXPOSURE=Exposure
+option.SATURATION=Saturation
+option.CONTRAST=Contrast
+option.VIGNETTE=Vignette
+option.WARMTH=Color Warmth
+option.HAZE=Distance Haze
+option.WAVING=Waving Plants
+option.WATER_FX=Water Effects
+profile.Lite=Lite
+profile.Default=Default
+profile.Cinematic=Cinematic
