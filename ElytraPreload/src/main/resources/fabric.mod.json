@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "elytra_preload",
+  "version": "${version}",
+  "name": "Elytra Preload",
+  "description": "Loads and generates chunks ahead of fast-moving players (elytra) to remove stutter.",
+  "authors": ["LiteGlow"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": { "main": ["dev.elytrapreload.ElytraPreload"] },
+  "depends": { "fabricloader": ">=0.19.0", "minecraft": "~1.21.11", "java": ">=21", "fabric-api": "*" }
+}
