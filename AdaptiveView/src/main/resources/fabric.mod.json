@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "adaptive_view",
+  "version": "${version}",
+  "name": "Adaptive View",
+  "description": "Automatically adjusts render distance: more chunks while gliding, fewer in forests, mountains, combat or at low FPS. Configurable in the Sodium video settings.",
+  "authors": ["LiteGlow"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.adaptiveview.AdaptiveView"],
+    "sodium:config_api_user": ["dev.adaptiveview.SodiumIntegration"]
+  },
+  "depends": { "fabricloader": ">=0.19.0", "minecraft": "~1.21.11", "java": ">=21", "fabric-api": "*" },
+  "suggests": { "sodium": ">=0.8.0" }
+}

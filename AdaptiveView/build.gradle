@@ -1,0 +1,31 @@
+plugins {
+    id 'fabric-loom' version '1.16.2'
+}
+
+version = project.mod_version
+group = 'dev.adaptiveview'
+base { archivesName = 'adaptive-view' }
+
+repositories {
+    maven { url = 'https://api.modrinth.com/maven'; content { includeGroup 'maven.modrinth' } }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    // Sodium 0.8.x config API (optional at runtime)
+    modCompileOnly "maven.modrinth:sodium:mc1.21.11-0.8.14-fabric"
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') { expand 'version': project.version }
+}
+
+tasks.withType(JavaCompile).configureEach { options.release = 21 }
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
