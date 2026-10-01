@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "private_sign",
+  "version": "${version}",
+  "name": "Private Sign",
+  "description": "Every sign a player places is automatically filled with a preset text (default: Частная / территория / Сунгирь).",
+  "authors": ["LiteGlow"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": { "main": ["dev.privatesign.PrivateSign"] },
+  "mixins": ["private_sign.mixins.json"],
+  "depends": { "fabricloader": ">=0.19.5", "minecraft": "~1.21.11", "java": ">=21", "fabric-api": "*" }
+}
