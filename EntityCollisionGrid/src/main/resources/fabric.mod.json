@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "entity_collision_grid",
+  "version": "${version}",
+  "name": "Entity Collision Grid",
+  "description": "Spatial hash grid broad-phase for entity collision / pushing / cramming queries. Configurable in the Sodium video settings.",
+  "authors": ["LiteGlow"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.entitygrid.EntityCollisionGrid"],
+    "sodium:config_api_user": ["dev.entitygrid.SodiumIntegration"]
+  },
+  "mixins": ["entity_collision_grid.mixins.json"],
+  "depends": { "fabricloader": ">=0.19.5", "minecraft": "~1.21.11", "java": ">=21", "fabric-api": "*" },
+  "suggests": { "sodium": ">=0.8.0" }
+}

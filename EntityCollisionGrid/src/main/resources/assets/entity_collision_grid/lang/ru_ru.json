@@ -1,0 +1,13 @@
+{
+  "entity_collision_grid.page": "Сетка коллизий сущностей",
+  "entity_collision_grid.group.general": "Основное",
+  "entity_collision_grid.group.debug": "Отладка",
+  "entity_collision_grid.option.enabled": "Использовать пространственную сетку",
+  "entity_collision_grid.option.enabled.tooltip": "Отвечать на запросы коллизий, толкания и «давки» сущностей из хэш-сетки вместо перебора целых секций чанка. Результат совпадает с ванильным.",
+  "entity_collision_grid.option.cell_size": "Размер ячейки сетки",
+  "entity_collision_grid.option.cell_size.tooltip": "Размер одной ячейки в блоках. Меньше — меньше кандидатов на запрос, но больше учёта для крупных сущностей. По умолчанию 2.",
+  "entity_collision_grid.option.debug_log": "Отладочный лог",
+  "entity_collision_grid.option.debug_log.tooltip": "Периодически пишет в лог, сколько проверок сущностей сделал бы ваниль и сколько сделала сетка (и запускает синтетический бенчмарк при старте).",
+  "entity_collision_grid.option.debug_verify": "Сверять с ванилью",
+  "entity_collision_grid.option.debug_verify.tooltip": "Дополнительно выполняет ванильный запрос и предупреждает о расхождениях. Медленно — только для тестов."
+}

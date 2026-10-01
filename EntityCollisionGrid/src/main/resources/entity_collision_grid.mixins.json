@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.entitygrid.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "priority": 1500,
+  "mixins": [
+    "EntityMixin",
+    "EntityTrackingSectionMixin",
+    "SimpleEntityLookupAccessor",
+    "WorldMixin"
+  ],
+  "injectors": { "defaultRequire": 1 }
+}

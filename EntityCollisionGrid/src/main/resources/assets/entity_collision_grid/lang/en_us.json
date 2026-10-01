@@ -1,0 +1,13 @@
+{
+  "entity_collision_grid.page": "Entity Collision Grid",
+  "entity_collision_grid.group.general": "General",
+  "entity_collision_grid.group.debug": "Debug",
+  "entity_collision_grid.option.enabled": "Use spatial grid",
+  "entity_collision_grid.option.enabled.tooltip": "Answer entity collision / pushing / cramming queries from a spatial hash grid instead of scanning whole chunk sections. Results are identical to vanilla.",
+  "entity_collision_grid.option.cell_size": "Grid cell size",
+  "entity_collision_grid.option.cell_size.tooltip": "Size of one grid cell in blocks. Smaller cells = fewer candidates per query but more bookkeeping for big entities. 2 is a good default.",
+  "entity_collision_grid.option.debug_log": "Debug log",
+  "entity_collision_grid.option.debug_log.tooltip": "Periodically logs how many entity checks vanilla would do vs. how many the grid does (also runs a synthetic benchmark at startup).",
+  "entity_collision_grid.option.debug_verify": "Verify against vanilla",
+  "entity_collision_grid.option.debug_verify.tooltip": "Runs the vanilla query as well and warns if the results differ. Slow - for testing only."
+}
